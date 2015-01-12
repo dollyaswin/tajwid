@@ -35,7 +35,12 @@ CREATE TABLE `category` (
 
 LOCK TABLES `category` WRITE;
 /*!40000 ALTER TABLE `category` DISABLE KEYS */;
-INSERT INTO `category` VALUES (1,'Makhrojul Huruf',NULL),(2,'Mad',NULL),(3,'Hukum Nun Mati Atau Tanwin',NULL),(4,'Hukum Mim Mati',NULL),(5,'Mad Asli',2),(6,'Idgham',3);
+INSERT INTO `category` VALUES (1,'Makhrojul Huruf',NULL);
+INSERT INTO `category` VALUES (2,'Mad',NULL);
+INSERT INTO `category` VALUES (3,'Hukum Nun Mati Atau Tanwin',NULL);
+INSERT INTO `category` VALUES (4,'Hukum Mim Mati',NULL);
+INSERT INTO `category` VALUES (5,'Mad Asli',2);
+INSERT INTO `category` VALUES (6,'Idgham',3);
 /*!40000 ALTER TABLE `category` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -60,7 +65,44 @@ CREATE TABLE `tajwid` (
 
 LOCK TABLES `tajwid` WRITE;
 /*!40000 ALTER TABLE `tajwid` DISABLE KEYS */;
-INSERT INTO `tajwid` VALUES (1,'آ',1,NULL),(2,'ب',1,NULL),(3,'ت',1,NULL),(4,'ِث',1,NULL),(5,'ج',1,NULL),(6,'ح',1,NULL),(7,'خ',1,NULL),(8,'د',1,NULL),(9,'ذ',1,NULL),(10,'ر',1,NULL),(11,'ز',1,NULL),(12,'س',1,NULL),(13,'ش',1,NULL),(14,'ص',1,NULL),(15,'ض',1,NULL),(16,'ط',1,NULL),(17,'ظ',1,NULL),(18,'ع',1,NULL),(19,'غ',1,NULL),(20,'ف',1,NULL),(21,'ق',1,NULL),(22,'ك',1,NULL),(23,'ل',1,NULL),(24,'م',1,NULL),(25,'ن',1,NULL),(26,'و',1,NULL),(27,'ه',1,NULL),(28,'لا',1,NULL),(29,'ء',1,NULL),(30,'ى',1,NULL),(31,'ا',5,NULL),(32,'يّ',5,NULL),(33,'وْ',5,NULL),(34,'Izhar',3,NULL),(35,'Iqlab',3,NULL),(36,'Ikhfa',3,NULL),(37,'Idgham Bigunnah',6,NULL),(38,'Idgham Bilaghunnah',6,NULL);
+INSERT INTO `tajwid` VALUES (1,'آ',1,'audio/alif.mp3');
+INSERT INTO `tajwid` VALUES (2,'ب',1,'audio/ba.mp3');
+INSERT INTO `tajwid` VALUES (3,'ت',1,'audio/ta.mp3');
+INSERT INTO `tajwid` VALUES (4,'ِث',1,'audio/tsa.mp3');
+INSERT INTO `tajwid` VALUES (5,'ج',1,'audio/jeem.mp3');
+INSERT INTO `tajwid` VALUES (6,'ح',1,'audio/ha.mp3');
+INSERT INTO `tajwid` VALUES (7,'خ',1,'audio/kha.mp3');
+INSERT INTO `tajwid` VALUES (8,'د',1,'audio/dal.mp3');
+INSERT INTO `tajwid` VALUES (9,'ذ',1,'audio/dzal.mp3');
+INSERT INTO `tajwid` VALUES (10,'ر',1,'audio/ra.mp3');
+INSERT INTO `tajwid` VALUES (11,'ز',1,'audio/zai.mp3');
+INSERT INTO `tajwid` VALUES (12,'س',1,'audio/sin.mp3');
+INSERT INTO `tajwid` VALUES (13,'ش',1,'audio/syim.mp3');
+INSERT INTO `tajwid` VALUES (14,'ص',1,'audio/shod.mp3');
+INSERT INTO `tajwid` VALUES (15,'ض',1,'audio/dhot.mp3');
+INSERT INTO `tajwid` VALUES (16,'ط',1,'audio/tho.mp3');
+INSERT INTO `tajwid` VALUES (17,'ظ',1,'audio/zho.mp3');
+INSERT INTO `tajwid` VALUES (18,'ع',1,NULL);
+INSERT INTO `tajwid` VALUES (19,'غ',1,NULL);
+INSERT INTO `tajwid` VALUES (20,'ف',1,NULL);
+INSERT INTO `tajwid` VALUES (21,'ق',1,NULL);
+INSERT INTO `tajwid` VALUES (22,'ك',1,NULL);
+INSERT INTO `tajwid` VALUES (23,'ل',1,NULL);
+INSERT INTO `tajwid` VALUES (24,'م',1,NULL);
+INSERT INTO `tajwid` VALUES (25,'ن',1,NULL);
+INSERT INTO `tajwid` VALUES (26,'و',1,NULL);
+INSERT INTO `tajwid` VALUES (27,'ه',1,NULL);
+INSERT INTO `tajwid` VALUES (28,'لا',1,NULL);
+INSERT INTO `tajwid` VALUES (29,'ء',1,NULL);
+INSERT INTO `tajwid` VALUES (30,'ى',1,NULL);
+INSERT INTO `tajwid` VALUES (31,'ا',5,NULL);
+INSERT INTO `tajwid` VALUES (32,'يّ',5,NULL);
+INSERT INTO `tajwid` VALUES (33,'وْ',5,NULL);
+INSERT INTO `tajwid` VALUES (34,'Izhar',3,NULL);
+INSERT INTO `tajwid` VALUES (35,'Iqlab',3,NULL);
+INSERT INTO `tajwid` VALUES (36,'Ikhfa',3,NULL);
+INSERT INTO `tajwid` VALUES (37,'Idgham Bigunnah',6,NULL);
+INSERT INTO `tajwid` VALUES (38,'Idgham Bilaghunnah',6,NULL);
 /*!40000 ALTER TABLE `tajwid` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -73,4 +115,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-01-12 10:20:22
+-- Dump completed on 2015-01-12 11:05:01

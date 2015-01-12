@@ -6,7 +6,9 @@
   <body> 
     <ul>
     <?php foreach ($tajwids as $tajwid): ?>
-      <li><a href="<?php isset($tajwid['parent_id']) ? print '?parent_id=' . $tajwid['id'] : print '#' ?>"><?php (isset($tajwid['tajwid'])) ? print $tajwid['tajwid'] : print $tajwid['name'] ?></a></li>
+      <li>
+	<a href="<?php isset($tajwid['parent_id']) ? print '?parent_id=' . $tajwid['id'] : print '#' ?>"><?php (isset($tajwid['tajwid'])) ? print $tajwid['tajwid'] : print $tajwid['name'] ?></a>
+      </li>
     <?php endforeach ?>
     </ul>
   </body>
