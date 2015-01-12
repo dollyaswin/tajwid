@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
   </head>
   <body> 
+    <?php require_once 'template/header.phtml' ?>
     <ul>
     <?php foreach ($categories as $category): ?>
       <li><a href="tajwid.php?parent_id=<?php echo $category['id'] ?>"><?php echo $category['name'] ?></a></li>
