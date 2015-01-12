@@ -91,7 +91,7 @@ INSERT INTO `tajwid` VALUES (23,'ل',1,'audio/lam.mp3');
 INSERT INTO `tajwid` VALUES (24,'م',1,'audio/mim.mp3');
 INSERT INTO `tajwid` VALUES (25,'ن',1,'audio/noon.mp3');
 INSERT INTO `tajwid` VALUES (26,'و',1,'audio/waw.mp3');
-INSERT INTO `tajwid` VALUES (27,'ه',1,'audio/waw.mp3');
+INSERT INTO `tajwid` VALUES (27,'ه',1,'audio/ha.big.mp3');
 INSERT INTO `tajwid` VALUES (28,'ء',1,'audio/hamza.mp3');
 INSERT INTO `tajwid` VALUES (29,'ى',1,'audio/ya.mp3');
 INSERT INTO `tajwid` VALUES (30,'ا',5,NULL);

@@ -7,7 +7,12 @@
     <ul>
     <?php foreach ($tajwids as $tajwid): ?>
       <li>
-	<a href="<?php isset($tajwid['parent_id']) ? print '?parent_id=' . $tajwid['id'] : print '#' ?>"><?php (isset($tajwid['tajwid'])) ? print $tajwid['tajwid'] : print $tajwid['name'] ?></a>
+        <?php if (isset($tajwid['parent_id'])): ?>
+	    <a href="?parent_id=<?php echo $tajwid['id'] ?>"><?php echo $tajwid['name']?></a>
+        <?php else:?>
+	    <audio id="sound_<?php echo $tajwid['id'] ?>" src="<?php echo $tajwid['recording_path'] ?>"></audio>
+	    <a href="javascript:document.getElementById('sound_<?php echo $tajwid['id'] ?>').play()"><?php echo $tajwid['tajwid'] ?></a>
+	<?php endif ?>
       </li>
     <?php endforeach ?>
     </ul>
